@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+header {
+    background: darkslategrey;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+div.language-toggle {
+    display: flex; 
+    align-items: center; 
+    gap: 20px;
+}
+
+.language-button {
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: darkslategray;
+    border-radius: 5px;
+    font-size: 16px;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+.language-button.active {
+    background-color: white;
+    color: black;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+#home-button {
+    background-color: darkslategray;
+    color: white;
+    padding: 5px 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.header-row {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.book-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.book-button {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    height: 80px;
+    margin: 1px;
+    border: 0cap;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+}
+
+.jpn-text {
+    flex: 0;
+    font-size: x-large;
+    color: black;
+    display: inline;
+}
+
+.eng-text {
+    flex: 0;
+    font-size: medium;
+    color: black
+}
+
+.por-text {
+    flex: 0;
+    font-size: medium;
+    color: black
+}

@@ -2,14 +2,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 0;
+    line-height: 1.2;
 }
 
 header {
     background: darkslategrey;
     color: white;
-    padding: 10px 10px;
+    padding: 5px 10px;
     text-align: center;
+    font-size: medium;
+}
+
+h1 {
+    font-size: xx-large;
+    margin: 5px;
 }
 
 div.language-toggle {
@@ -25,7 +31,7 @@ div.language-toggle {
     color: white;
     background-color: darkslategray;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: medium;
     -webkit-transition: background-color 200ms linear;
     -ms-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
@@ -78,20 +84,159 @@ div.language-toggle {
 }
 
 .jpn-text {
-    flex: 0;
-    font-size: x-large;
-    color: black;
     display: inline;
 }
 
 .eng-text {
+    display: none;
+}
+
+.por-text {
+    display: none;
+}
+
+.button-jpn-text {
+    flex: 0;
+    font-size: x-large;
+    color: black;
+}
+
+.button-eng-text {
     flex: 0;
     font-size: medium;
     color: black
 }
 
-.por-text {
+.button-por-text {
     flex: 0;
     font-size: medium;
     color: black
+}
+
+.scripture-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.chapter-header {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    height: auto;
+    margin: 10px;
+    border: 0cap;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.scripture-jpn-text {
+    flex: 1;
+    font-size: large;
+    color: black;
+    margin: 10px;
+}
+
+.scripture-eng-text {
+    flex: 1;
+    font-size: large;
+    color: black;
+    margin: 10px;
+}
+
+.scripture-por-text {
+    flex: 1;
+    font-size: large;
+    color: black;
+    margin: 10px;
+}
+
+hr {
+    width: 100%;
+}
+
+.book-desc {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    height: auto;
+    margin: 10px;
+    border: 0cap;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-desc-jpn {
+    flex: 1;
+    font-size: large;
+    color: black;
+    margin: 10px;
+    display: flex;
+}
+
+.book-desc-eng {
+    flex: 1;
+    font-size: large;
+    color: black;
+    margin: 10px;
+    display: flex;
+}
+
+.book-desc-por {
+    flex: 1;
+    font-size: large;
+    color: black;
+    margin: 10px;
+    display: flex;
+}
+
+.chapter-desc {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    height: auto;
+    margin: 10px;
+    border: 0cap;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.chapter-desc-jpn {
+    flex: 1;
+    font-size: large;
+    color: black;
+    margin: 10px;
+    display: flex;
+    font-style: italic;
+}
+
+.chapter-desc-eng {
+    flex: 1;
+    font-size: large;
+    color: black;
+    margin: 10px;
+    display: flex;
+    font-style: italic;
+}
+
+.chapter-desc-por {
+    flex: 1;
+    font-size: large;
+    color: black;
+    margin: 10px;
+    display: flex;
+    font-style: italic;
+}
+
+.verse-container {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    height: auto;
+    margin: 10px;
+    border: 0cap;
+    background-color: white;
 }
